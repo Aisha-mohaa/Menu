@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+
+</head>
+<body class="bg-green-400 ">
+<div class="bg-white w-[90%] sm:w-[450px] h-[600px] rounded-lg shadow-lime-800 mt-28 pl-5 mx-auto mb-3">
+        
+        <div class="flex justify-around pt-9 mb-5">
+            <div>
+                <h1 class=" xir text-2xl text-black">Menu</h1>
+            </div>
+            <div id="bars" class="cursor-pointer">
+                <i  class="text-3xl shadow shadow-slate-600 fas fa-bars"></i>
+            </div>
+        </div>
+         <div class="md:block space-y-5">
+
+             <div class="flex gap-5  rounded-lg hover:bg-gray-400 px-3 py-3 border focus: mr-8 ">
+                 <i class=" text-3xl fas fa-home"></i>
+                 <h1 class=" xir text-2xl ">Home</h1> 
+            </div>
+            <div class="flex gap-5  rounded-lg hover:bg-gray-400 px-3 py-3 border focus: mr-8 ">
+                 <i class=" text-3xl fas fa-user"></i>
+                 <h1 class=" xir text-2xl ">Profile</h1> 
+            </div>
+            <div class="flex gap-5 rounded-lg hover:bg-gray-200 px-3 py-3 border border-collapse mr-8 ">
+                <i class=" text-3xl fas fa-cog"></i>
+                <h1 class=" xir text-2xl ">Setting</h1> 
+            </div>
+            <div class="flex gap-5 rounded-lg hover:bg-gray-200 px-3 py-3 border border-collapse mr-8 ">
+                <i class=" text-3xl fas fa-comment"></i>
+                <h1 class=" xir text-2xl ">massage</h1> 
+            </div>
+            <div class="flex gap-5 rounded-lg hover:bg-gray-200 px-3 py-3 border border-collapse mr-8 ">
+                <i class=" text-3xl fas fa-sign-out-alt"></i>
+                <h1 class="xir text-2xl">LogeOut</h1> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const bars = document.querySelector("#bars")
+        const xir = document.querySelectorAll(".xir")
+        
+        bars.addEventListener ("click", ()=>{
+            xir.forEach(h1 =>{
+                h1.classList.toggle("hidden")
+            })
+        })
+
+
+
+
+    //       bars.addEventListener("click", () => {
+    //   headings.forEach(h1 => {
+    //     h1.classList.toggle("hidden");
+    //   });
+    // });
+        
+    </script>
+
+    
+</body>
+</html>
